@@ -1,0 +1,18 @@
+version: '3'
+services:
+  expertics-pedidos:
+    image: expertics-python
+    ports:
+    - "5000:5000"
+  expertics-productos:
+    image: expertics-nodejs
+    ports:
+    - "1511:3000"
+  expertics-proveedores:
+    image: expertics-python
+    ports:
+    - "5001:5000"
+  expertics-db:
+    image: "mariadb:10"
+    ports:
+    - "3306:3306"
